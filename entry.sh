@@ -43,6 +43,22 @@ while [[ "${#}" -gt 0 ]] ; do
             shift
         ;;
         "--kural"|"-k")
+            if [[ -f "${DISCORDSH}" ]] ; then
+                bash -c "${EDITOR} ${SCRIPTS}/tbvpt-kural.sh" && {
+                    echo -e "\tbaşarı: betik kaydedildi.."
+                    bash "${SCRIPTS}/tbvpt-kural.sh" && {
+                        echo -e "\tbaşarı: betik yürütme başarı ile çalıştı."
+                    } || {
+                        echo -e "\thata: betik yürütme başarısız."
+                    }
+                } || {
+                    echo -e "\thata: betik kaydedilemedi, çıkılıyor."
+                    exit 1
+                }
+            else
+                echo -e "\thata: bu özellik discord.sh dosyası gerektirmektedir, lütfen ortam değişkenlerinizi ayarlayın."
+                exit 1
+            fi
             shift
         ;;
         "--yardım"|"-y")

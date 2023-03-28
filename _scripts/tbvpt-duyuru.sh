@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TEXT="Merhaba bu deneme duyurusu."
+TEXT="Değerli dostlarımız topluluğumuzun blog sayfası ve aynı zamanda tanıtım sitesi artık hazır, burada sizlerin mlp ile ilgili yorumlarınızı, **fikirlerinizi**, **düşüncelerinizi**, **içeriklerinizi**, **paylaşımlarınızı**, teorilerinizi ve daha nicelerini paylaşamayı hedefliyoruz, sitemiz şu anlık yapım aşamasında olduğundan fikir ve önerilerinize muhtacız:\nhttps://lazypwny751.github.io/tbvpt"
 
 bash "${DISCORDSH}" \
   	--webhook-url="${WEBHOOK}" \
