@@ -1,0 +1,9 @@
+title: TBvPT
+markdown: kramdown
+theme: jekyll-theme-primer
+exclude: 
+  - _scripts
+  - entry.sh
+  - .env
+  - .env-example
+  - .tmpcache
